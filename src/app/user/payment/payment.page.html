@@ -1,0 +1,83 @@
+<ion-content>
+
+  <div class="div_top">
+
+    <ion-row class="row_">
+      <ion-col size="12" class="col_">
+        <ion-button fill="clear" color="dark" class="btn_back" (click)="close()">
+          <ion-icon name="close-circle-outline" class="icon_"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <div class="div_card">
+     <img src="../../../assets/images/card.png" class="img_card"/>
+    </div>
+
+  </div>
+
+  <div class="div_bottom">
+
+    <ion-label color="light" class="lbl_head">Card Details</ion-label>
+
+    <form [formGroup]="pay_form" autocomplete="off">
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-input type="text" formControlName="name" placeholder="Card Holder Name" class="input_"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+        *ngIf="pay_form.controls.name.hasError('required') && pay_form.controls.name.touched">
+        <p class="content add-error">Please Enter Card Holder Name!</p>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-input type="number" formControlName="number" placeholder="Card Number" class="input_"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+        *ngIf="pay_form.controls.number.hasError('required') && pay_form.controls.number.touched">
+        <p class="content add-error">Please Enter Card Number!</p>
+      </ion-item>
+
+      <ion-row class="row_1">
+        <ion-col size="6" class="col_1">
+          <ion-item no-padding lines="none" class="item_1 right_">
+            <ion-input type="text" formControlName="expiry" placeholder="Month / Year" class="input_1"></ion-input>
+          </ion-item>
+
+          <ion-item no-padding lines="none" class="validator-error_1"
+            *ngIf="pay_form.controls.expiry.hasError('required') && pay_form.controls.expiry.touched">
+            <p class="content_1">Enter Expirey!</p>
+            <!-- Please Enter Expirey Date! -->
+          </ion-item>
+        </ion-col>
+        <ion-col size="6" class="col_1">
+          <ion-item no-padding lines="none" class="item_1 left_">
+            <ion-input type="number" formControlName="cvv" placeholder="CVV" class="input_1"></ion-input>
+          </ion-item>
+
+          <ion-item no-padding lines="none" class="validator-error_1"
+            *ngIf="pay_form.controls.cvv.hasError('required') && pay_form.controls.cvv.touched">
+            <p class="content_1">Enter CVV!</p>
+            <!-- Please Enter CVV Number! -->
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+    </form>
+
+    <div class="div_btn">
+    <ion-row class="row_btn" (click)="pay()">
+      <ion-col size="8" class="col_btn">
+        <ion-label color="light" class="lbl_btn">Confirm Payment</ion-label>
+      </ion-col>
+      <ion-col size="4" class="col_amt">
+        <ion-label color="dark" class="lbl_amt">$ 3.64</ion-label>
+      </ion-col>
+    </ion-row>
+    </div>
+
+  </div>
+
+</ion-content>

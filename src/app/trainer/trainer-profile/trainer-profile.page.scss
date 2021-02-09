@@ -1,0 +1,115 @@
+ion-content {
+  .div_video {
+    height: 224px;
+    background: var(--ion-color-secondary);
+    padding: 16px 0px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    position: relative;
+    // .back_ {
+    //   .back_icon {
+    //   }
+    // }
+    .div_img {
+      position: relative;
+      .div_inner {
+        position: absolute;
+        top: -56px;
+        width: 200px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        .img_ {
+          height: 200px;
+          width: 200px;
+          object-fit: cover;
+        }
+      }
+    }
+    .divB_ {
+      width: 100%;
+      position: absolute;
+      bottom: -88px;
+      .div_box {
+        width: 90%;
+        margin: 0 auto;
+        background: var(--ion-color-dark);
+        padding: 24px 0px 0px 0px;
+        box-shadow: 0 0 10px #ccc;
+        border-radius: 24px;
+        .lbl_name {
+          display: block;
+          font-size: 18px;
+          text-align: center;
+          padding: 4px 0px;
+          font-weight: bold;
+        }
+        .lbl_pro {
+          display: block;
+          font-size: 14px;
+          text-align: center;
+          padding: 2px 0px;
+        }
+        .lbl_desc {
+          display: block;
+          font-size: 12px;
+          text-align: center;
+          width: 75%;
+          margin: 0 auto;
+          padding: 16px 0px 24px 0px;
+        }
+        .row_btn {
+          .col_btn {
+            padding: 0px;
+            .btnF_ {
+              display: block;
+              font-size: 14px;
+              font-weight: bold;
+              text-align: center;
+              padding: 18px;
+              background: var(--ion-color-primary);
+              border-bottom-left-radius: 22px;
+            }
+            .btnC_ {
+              display: block;
+              font-size: 14px;
+              font-weight: bold;
+              text-align: center;
+              padding: 18px;
+              background: var(--ion-color-light);
+              border-bottom-right-radius: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .div_desc {
+    padding: 8px 24px;
+    .lbl_head {
+      display: block;
+      font-size: 14px;
+      text-align: left;
+      font-weight: bold;
+      padding: 8px 0px;
+    }
+    .lbl_bio {
+      display: block;
+      font-size: 12px;
+      text-align: left;
+    }
+  }
+  .div_btn {
+    position: absolute;
+    // bottom: 0;
+    width: 100%;
+    padding: 16px 0px;
+    .btns_ {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+}
+.top_ {
+  margin-top: 100px;
+}

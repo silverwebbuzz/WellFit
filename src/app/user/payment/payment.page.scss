@@ -1,0 +1,111 @@
+ion-content {
+  .div_top {
+    height: 40%;
+    background: var(--ion-color-light-shade);
+    .row_ {
+      padding-top: 16px;
+      .col_ {
+        padding: 0px;
+        text-align: right;
+        .btn_back {
+          --padding-start: 0;
+          margin-inline-start: 16px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .div_card{
+      text-align: center;
+      .img_card{
+        height: 150px;
+      }
+    }
+  }
+  .div_bottom {
+    height: 70%;
+    background: var(--ion-color-dark);
+    .lbl_head {
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 32px 0px 16px 0px;
+    }
+    .row_1 {
+      width: 85%;
+      margin: 0 auto;
+      .col_1 {
+        padding: 0px;
+        .item_1 {
+          //   width: 94%;
+          //   margin: 0 auto !important;
+          --inner-padding-end: 0px;
+          --padding-start: 0px;
+          // padding: 2px 8px 2px 8px;
+          margin: 0px;
+          border-radius: 50px;
+          margin-top: 16px !important;
+          .input_1 {
+            // margin-left: 32px;
+            text-align: center;
+            --padding-top: 0px;
+            --padding-end: 0px;
+            --padding-bottom: 0px;
+            --padding-start: 0;
+          }
+        }
+      }
+    }
+    .div_btn {
+      position: absolute;
+      width: 100%;
+      bottom: -32px;
+      .row_btn {
+        width: 85%;
+        margin: 0 auto;
+        .col_btn {
+          padding: 16px;
+          background: var(--ion-color-primary);
+          border-bottom-left-radius: 50px;
+          border-top-left-radius: 50px;
+          .lbl_btn {
+            display: block;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+        .col_amt {
+          padding: 16px;
+          background: var(--ion-color-light);
+          border-bottom-right-radius: 50px;
+          border-top-right-radius: 50px;
+          .lbl_amt {
+            display: block;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+.left_ {
+  margin-left: 6px !important;
+}
+.right_ {
+  margin-right: 6px !important;
+}
+.validator-error_1 {
+  --background: transparent;
+  color: #d44848;
+  --min-height: 18px;
+  width: 85%;
+  // margin: 0 auto;
+
+  .content_1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "WellFit",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

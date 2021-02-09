@@ -1,0 +1,143 @@
+<ion-content>
+  <div class="div_top">
+    <ion-row class="row_">
+      <ion-col size="2" class="col_ left">
+        <ion-button fill="clear" color="light" class="btn_back" (click)="back()">
+          <ion-icon name="chevron-back-outline" class="icon_"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size="6" class="col_"></ion-col>
+      <ion-col size="4" class="col_ left right">
+        <ion-button fill="clear" color="light" class="btn_back" (click)="close()">
+          <ion-icon name="close-circle-outline" class="icon_"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <div class="div_mid">
+      <ion-label color="light" class="div_head">Commit to gaining muscle</ion-label>
+      <div class="div_points">
+        <ion-row class="row_points">
+          <ion-col size="1" class="col_points">
+            <ion-icon color="primary" name="checkmark-sharp" class="icon_chk"></ion-icon>
+          </ion-col>
+          <ion-col size="11" class="col_points">
+            <ion-label color="light" class="lbl_points">Plan your week to stay on track</ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_points">
+          <ion-col size="1" class="col_points">
+            <ion-icon color="primary" name="checkmark-sharp" class="icon_chk"></ion-icon>
+          </ion-col>
+          <ion-col size="11" class="col_points">
+            <ion-label color="light" class="lbl_points">Personalized workouts for fast muscle gain</ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_points">
+          <ion-col size="1" class="col_points">
+            <ion-icon color="primary" name="checkmark-sharp" class="icon_chk"></ion-icon>
+          </ion-col>
+          <ion-col size="11" class="col_points">
+            <ion-label color="light" class="lbl_points">Freedom to train anytime, anywhere</ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_points">
+          <ion-col size="1" class="col_points">
+            <ion-icon color="primary" name="checkmark-sharp" class="icon_chk"></ion-icon>
+          </ion-col>
+          <ion-col size="11" class="col_points">
+            <ion-label color="light" class="lbl_points">Get free access to training exercises</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+    <div class="div_end">
+      <ion-segment mode="md" [(ngModel)]="tabs" value="6" class="seg_">
+        <ion-segment-button class="seg_btn" value="3">
+          <ion-label>3 Months</ion-label>
+        </ion-segment-button>
+        <ion-segment-button class="seg_btn" value="6">
+          <ion-label>6 Months</ion-label>
+        </ion-segment-button>
+        <ion-segment-button class="seg_btn" value="12">
+          <ion-label>12 Months</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+  </div>
+
+  <div class="div_bottom">
+    <div [ngSwitch]="tabs">
+      <div *ngSwitchCase="'3'">
+        <div class="div_tab">
+          <ion-row class="row_tab">
+            <ion-col size="6" class="col_left">
+              <ion-label color="light" class="lbl_title">Training & Nutrition</ion-label>
+            </ion-col>
+            <ion-col size="6" class="col_right">
+              <ion-label color="light" class="lbl_week">$ 3.64 / Week</ion-label>
+              <ion-label color="light" class="lbl_month">$ 94.99 / 6 Months</ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_tab plan_">
+            <ion-col size="6" class="col_left">
+              <ion-label color="light" class="lbl_title">Training</ion-label>
+            </ion-col>
+            <ion-col size="6" class="col_right">
+              <ion-label color="light" class="lbl_week">$ 3.64 / Week</ion-label>
+              <ion-label color="light" class="lbl_month">$ 94.99 / 6 Months</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+
+      <div *ngSwitchCase="'6'">
+        <div class="div_tab">
+          <ion-row class="row_tab" (click)="payment()">
+            <ion-col size="6" class="col_left">
+              <ion-label color="light" class="lbl_title">Training & Nutrition</ion-label>
+            </ion-col>
+            <ion-col size="6" class="col_right">
+              <ion-label color="light" class="lbl_week">$ 3.64 / Week</ion-label>
+              <ion-label color="light" class="lbl_month">$ 94.99 / 6 Months</ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_tab plan_">
+            <ion-col size="6" class="col_left">
+              <ion-label color="light" class="lbl_title">Training</ion-label>
+            </ion-col>
+            <ion-col size="6" class="col_right">
+              <ion-label color="light" class="lbl_week">$ 3.64 / Week</ion-label>
+              <ion-label color="light" class="lbl_month">$ 94.99 / 6 Months</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+
+      <div *ngSwitchCase="'12'">
+        <div class="div_tab">
+          <ion-row class="row_tab">
+            <ion-col size="6" class="col_left">
+              <ion-label color="light" class="lbl_title">Training & Nutrition</ion-label>
+            </ion-col>
+            <ion-col size="6" class="col_right">
+              <ion-label color="light" class="lbl_week">$ 3.64 / Week</ion-label>
+              <ion-label color="light" class="lbl_month">$ 94.99 / 6 Months</ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_tab plan_">
+            <ion-col size="6" class="col_left">
+              <ion-label color="light" class="lbl_title">Training</ion-label>
+            </ion-col>
+            <ion-col size="6" class="col_right">
+              <ion-label color="light" class="lbl_week">$ 3.64 / Week</ion-label>
+              <ion-label color="light" class="lbl_month">$ 94.99 / 6 Months</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</ion-content>

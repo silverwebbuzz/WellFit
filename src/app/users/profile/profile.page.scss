@@ -1,0 +1,72 @@
+ion-header {
+  .title_ {
+    text-align: left;
+    padding-inline-start: 16%;
+    padding-inline-end: 16%;
+  }
+}
+
+ion-content {
+  .row_head {
+    padding: 16px;
+    .col_head {
+      padding: 0px;
+      .img_ {
+        height: 85px;
+        width: 85px;
+        border-radius: 100px;
+      }
+      .lbl_name {
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 4px 0px;
+      }
+      .lbl_exp {
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 4px 0px;
+      }
+      .lbl_email {
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        padding: 4px 0px;
+      }
+    }
+  }
+  .row_item {
+    padding: 16px 24px;
+    margin: 16px 16px;
+    background: #eee;
+    border-radius: 12px;
+    .col_icon {
+      padding: 0px;
+      .icon_ {
+          font-size: 28px;
+      }
+    }
+    .col_lbl {
+      padding: 0px;
+      margin-top: auto;
+      margin-bottom: auto;
+      .lbl_ {
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+    .col_data {
+      padding: 0px;
+      text-align: end;
+      margin-top: auto;
+      margin-bottom: auto;
+      .lbl_data {
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
+}

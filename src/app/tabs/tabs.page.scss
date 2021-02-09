@@ -1,0 +1,28 @@
+.tab_bar{
+    --background: var(--ion-color-dark-tint);
+    height: 56px;
+    .tab_btn{
+        --color-selected: var(--ion-color-primary);
+        .tab_icons{
+            height: 24px;
+            --color: var(--ion-color-secondary-contrast);
+        }
+        .tab_lbl{
+            padding-top: 6px;
+            font-size: 10px;
+            font-weight: normal;
+            text-transform: uppercase;
+            --color: var(--ion-color-secondary-contrast);
+        }
+    }
+    
+}
+.fab_{
+    position: absolute;
+    bottom: 28px;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    .tab_icons{
+        height: 24px;
+    }
+}

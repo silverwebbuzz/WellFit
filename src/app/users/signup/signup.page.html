@@ -1,0 +1,227 @@
+<ion-content color="dark">
+
+  <ion-segment [(ngModel)]="tabs" mode="md" value="user">
+    <ion-segment-button class="btn_top" value="user">
+      <ion-label>User</ion-label>
+    </ion-segment-button>
+    <ion-segment-button class="btn_top" value="trainer">
+      <ion-label>Trainer</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="tabs">
+    <div *ngSwitchCase="'user'">
+
+      <div class="div_head">
+        <ion-label color="light" class="lbl_login">Register</ion-label>
+        <ion-label color="light" class="lbl_desc">Create your personal account</ion-label>
+      </div>
+
+      <form [formGroup]="user_form" autocomplete="off">
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-input type="text" formControlName="user_first_name" placeholder="First Name" class="input_"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="user_form.controls.user_first_name.hasError('required') && user_form.controls.user_first_name.touched">
+      <p class="content add-error">Please Enter First Name!</p>
+    </ion-item>
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-input type="text" formControlName="user_last_name" placeholder="Last Name" class="input_"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="user_form.controls.user_last_name.hasError('required') && user_form.controls.user_last_name.touched">
+      <p class="content add-error">Please Enter Last Name!</p>
+    </ion-item>
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-input type="email" formControlName="user_email" placeholder="Email" class="input_"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="user_form.controls.user_email.hasError('required') && user_form.controls.user_email.touched">
+      <p class="content add-error">Please Enter Email!</p>
+    </ion-item>
+
+    <ion-item no-padding lines="none" class="validator-error"
+      *ngIf="user_form.controls.user_email.hasError('pattern') && user_form.controls.user_email.touched">
+      <p class="content">Please Enter Valid Email Address!</p>
+    </ion-item>
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-input type="password" formControlName="user_password" placeholder="Password" class="input_"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="user_form.controls.user_password.hasError('required') && user_form.controls.user_password.touched">
+      <p class="content add-error">Please Enter Password!</p>
+    </ion-item>
+
+    <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="user_form.controls.user_password.hasError('incorrect') && user_form.controls.user_password.touched">
+      <p class="content add-error">Invalid Password.</p>
+    </ion-item>
+
+      </form>
+
+      <ion-label class="lbl_">
+        By creating an account, I agree to Wellfit360
+        <span>Terms of use</span>
+        and
+        <span>Privacy Policy</span>
+      </ion-label>
+
+      <ion-label class="lbl_">
+        Wellfit360 uses your email address to send you occasional product updates and marketing emails, you can opt out
+        at any time in ypur settings.
+      </ion-label>
+
+      <div class="div_btn">
+        <ion-button expand="full" shape="round" (click)="userSignup()">Sign Up</ion-button>
+      </div>
+
+    </div>
+
+    <div *ngSwitchCase="'trainer'">
+<div *ngIf="step == 0">
+      <div class="div_head">
+        <ion-label color="light" class="lbl_login">Register</ion-label>
+        <ion-label color="light" class="lbl_desc">Create your personal account - step 1</ion-label>
+      </div>
+
+      <form [formGroup]="trainer1_form" autocomplete="off">
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-input type="text" formControlName="first_name" placeholder="First Name" class="input_"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="trainer1_form.controls.first_name.hasError('required') && trainer1_form.controls.first_name.touched">
+      <p class="content add-error">Please Enter First Name!</p>
+    </ion-item>
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-input type="text" formControlName="last_name" placeholder="Last Name" class="input_"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="trainer1_form.controls.last_name.hasError('required') && trainer1_form.controls.last_name.touched">
+      <p class="content add-error">Please Enter Last Name!</p>
+    </ion-item>
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-input type="email" formControlName="email" placeholder="Email" class="input_"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="trainer1_form.controls.email.hasError('required') && trainer1_form.controls.email.touched">
+      <p class="content add-error">Please Enter Email!</p>
+    </ion-item>
+
+    <ion-item no-padding lines="none" class="validator-error"
+      *ngIf="trainer1_form.controls.email.hasError('pattern') && trainer1_form.controls.email.touched">
+      <p class="content">Please Enter Valid Email Address!</p>
+    </ion-item>
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-input type="password" formControlName="password" placeholder="Password" class="input_"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="trainer1_form.controls.password.hasError('required') && trainer1_form.controls.password.touched">
+      <p class="content add-error">Please Enter Password!</p>
+    </ion-item>
+
+    <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="trainer1_form.controls.password.hasError('incorrect') && trainer1_form.controls.password.touched">
+      <p class="content add-error">Invalid Password.</p>
+    </ion-item>
+
+      </form>
+
+      <ion-label class="lbl_">
+        By creating an account, I agree to Wellfit360
+        <span>Terms of use</span>
+        and
+        <span>Privacy Policy</span>
+      </ion-label>
+
+      <ion-label class="lbl_">
+        Wellfit360 uses your email address to send you occasional product updates and marketing emails, you can opt out
+        at any time in ypur settings.
+      </ion-label>
+
+      <div class="div_btn">
+        <ion-button expand="full" shape="round" (click)="next()">Next Step</ion-button>
+      </div>
+    </div>
+    </div>
+
+    <div *ngIf="step == 1">
+
+      <ion-button fill="clear" class="btn_back" (click)="back()">
+        <ion-icon name="chevron-back-outline" color="light" class="icon_"></ion-icon>
+      </ion-button>
+
+      <div class="div_head">
+        <ion-label color="light" class="lbl_login">Register</ion-label>
+        <ion-label color="light" class="lbl_desc">Create your personal account - step 2</ion-label>
+      </div>
+
+      <form [formGroup]="trainer2_form" autocomplete="off">
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-input type="nubmer" formControlName="phone_number" placeholder="Telephone Number" class="input_"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="trainer2_form.controls.phone_number.hasError('required') && trainer2_form.controls.phone_number.touched">
+      <p class="content add-error">Please Enter Phone Number!</p>
+    </ion-item>
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-icon name="camera" color="medium" class="input_"></ion-icon>
+        <ion-input type="text" formControlName="certificate" placeholder="Certification Photo" class="input_ left"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="trainer2_form.controls.certificate.hasError('required') && trainer2_form.controls.certificate.touched">
+      <p class="content add-error">Please Enter Certificate!</p>
+    </ion-item>
+
+      <ion-item no-padding lines="none" class="item_">
+        <ion-icon name="camera" color="medium" class="input_"></ion-icon>
+        <ion-input type="text" formControlName="passport" placeholder="ID/Passport Photo" class="input_ left"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding lines="none" class="validator-error error-spc"
+      *ngIf="trainer2_form.controls.passport.hasError('required') && trainer2_form.controls.passport.touched">
+      <p class="content add-error">Please Enter Passport!</p>
+    </ion-item>
+
+      </form>
+
+      <ion-label class="lbl_">
+        By creating an account, I agree to Wellfit360
+        <span>Terms of use</span>
+        and
+        <span>Privacy Policy</span>
+      </ion-label>
+
+      <ion-label class="lbl_">
+        Wellfit360 uses your email address to send you occasional product updates and marketing emails, you can opt out
+        at any time in ypur settings.
+      </ion-label>
+
+      <div class="div_btn">
+        <ion-button expand="full" shape="round" (click)="trainerSignup()">Sign Up</ion-button>
+      </div>
+
+    </div>
+
+  </div>
+
+</ion-content>

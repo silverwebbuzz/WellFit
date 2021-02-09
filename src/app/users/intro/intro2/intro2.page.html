@@ -1,0 +1,28 @@
+<ion-content color="dark">
+
+  <ion-row class="row_">
+    <ion-col size="2" class="col_ left">
+      <ion-button fill="clear" class="btn_back" (click)="back()">
+        <ion-icon name="chevron-back-outline" color="light" class="icon_"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col size="6" class="col_"></ion-col>
+    <ion-col size="4" class="col_">
+      <ion-label color="light" class="lbl_skip" (click)="skip()">Skip</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <div class="div_lbl">
+    <ion-label color="light" class="lbl_head">Personalize</ion-label>
+    <ion-label color="light" class="lbl_desc">Your lifestyle with your favourite coach</ion-label>
+  </div>
+
+  <div class="div_img">
+    <img src="../../../../assets/images/placeholder.png" class="img_logo" />
+  </div>
+
+  <div class="div_btn">
+    <ion-button expand="full" shape="round" class="btn_footer" (click)="next()">Next</ion-button>
+  </div>
+
+</ion-content>

@@ -1,0 +1,602 @@
+<ion-content color="dark">
+
+  <ion-segment [(ngModel)]="tabs" mode="md" value="bookings">
+    <ion-segment-button class="btn_top" value="bookings">
+      <ion-label>Bookings</ion-label>
+    </ion-segment-button>
+    <ion-segment-button class="btn_top" value="appointments">
+      <ion-label>Appointments</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="tabs">
+    <div *ngSwitchCase="'bookings'">
+
+      <ion-searchbar searchIcon="none" class="search_"></ion-searchbar>
+
+      <div class="div_vertical">
+
+        <div class="div_trainer" (click)="profile()">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_trainer">
+            <ion-col size="5" class="col_trainer">
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="2" class="col_trainer">
+              <ion-label class="lbl_day">Monday</ion-label>
+              <ion-label class="lbl_date">19</ion-label>
+            </ion-col>
+            <ion-col size="5" class="col_trainer right_">
+              <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+              <ion-label class="lbl_AP">Join Appointment</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer" (click)="profile()">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_trainer">
+            <ion-col size="5" class="col_trainer">
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="2" class="col_trainer">
+              <ion-label class="lbl_day">Monday</ion-label>
+              <ion-label class="lbl_date">19</ion-label>
+            </ion-col>
+            <ion-col size="5" class="col_trainer right_">
+              <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+              <ion-label class="lbl_AP">Join Appointment</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer" (click)="profile()">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_trainer">
+            <ion-col size="5" class="col_trainer">
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="2" class="col_trainer">
+              <ion-label class="lbl_day">Monday</ion-label>
+              <ion-label class="lbl_date">19</ion-label>
+            </ion-col>
+            <ion-col size="5" class="col_trainer right_">
+              <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+              <ion-label class="lbl_AP">Join Appointment</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer" (click)="profile()">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_trainer">
+            <ion-col size="5" class="col_trainer">
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="2" class="col_trainer">
+              <ion-label class="lbl_day">Monday</ion-label>
+              <ion-label class="lbl_date">19</ion-label>
+            </ion-col>
+            <ion-col size="5" class="col_trainer right_">
+              <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+              <ion-label class="lbl_AP">Join Appointment</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer" (click)="profile()">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_trainer">
+            <ion-col size="5" class="col_trainer">
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="2" class="col_trainer">
+              <ion-label class="lbl_day">Monday</ion-label>
+              <ion-label class="lbl_date">19</ion-label>
+            </ion-col>
+            <ion-col size="5" class="col_trainer right_">
+              <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+              <ion-label class="lbl_AP">Join Appointment</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer" (click)="profile()">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_trainer">
+            <ion-col size="5" class="col_trainer">
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="2" class="col_trainer">
+              <ion-label class="lbl_day">Monday</ion-label>
+              <ion-label class="lbl_date">19</ion-label>
+            </ion-col>
+            <ion-col size="5" class="col_trainer right_">
+              <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+              <ion-label class="lbl_AP">Join Appointment</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer" (click)="profile()">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_trainer">
+            <ion-col size="5" class="col_trainer">
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="2" class="col_trainer">
+              <ion-label class="lbl_day">Monday</ion-label>
+              <ion-label class="lbl_date">19</ion-label>
+            </ion-col>
+            <ion-col size="5" class="col_trainer right_">
+              <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+              <ion-label class="lbl_AP">Join Appointment</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer" (click)="profile()">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_trainer">
+            <ion-col size="5" class="col_trainer">
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="2" class="col_trainer">
+              <ion-label class="lbl_day">Monday</ion-label>
+              <ion-label class="lbl_date">19</ion-label>
+            </ion-col>
+            <ion-col size="5" class="col_trainer right_">
+              <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+              <ion-label class="lbl_AP">Join Appointment</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer" (click)="profile()">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_trainer">
+            <ion-col size="5" class="col_trainer">
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="2" class="col_trainer">
+              <ion-label class="lbl_day">Monday</ion-label>
+              <ion-label class="lbl_date">19</ion-label>
+            </ion-col>
+            <ion-col size="5" class="col_trainer right_">
+              <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+              <ion-label class="lbl_AP">Join Appointment</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer" (click)="profile()">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_trainer">
+            <ion-col size="5" class="col_trainer">
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="2" class="col_trainer">
+              <ion-label class="lbl_day">Monday</ion-label>
+              <ion-label class="lbl_date">19</ion-label>
+            </ion-col>
+            <ion-col size="5" class="col_trainer right_">
+              <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+              <ion-label class="lbl_AP">Join Appointment</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer" (click)="profile()">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="row_trainer">
+            <ion-col size="5" class="col_trainer">
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="2" class="col_trainer">
+              <ion-label class="lbl_day">Monday</ion-label>
+              <ion-label class="lbl_date">19</ion-label>
+            </ion-col>
+            <ion-col size="5" class="col_trainer right_">
+              <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+              <ion-label class="lbl_AP">Join Appointment</ion-label>
+            </ion-col>
+          </ion-row>
+        </div>
+
+      </div>
+    </div>
+
+    <div *ngSwitchCase="'appointments'">
+
+      <ion-searchbar searchIcon="none" class="search_"></ion-searchbar>
+
+      <div class="div_trainer" (click)="profile()">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <!-- <div class="div_icon color_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div> -->
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_trainer top_">
+          <ion-col size="5" class="col_trainer">
+            <ion-label class="lbl_trainer_pro color_">Intermediate</ion-label>
+          </ion-col>
+          <ion-col size="2" class="col_trainer">
+            <ion-label class="lbl_day">Monday</ion-label>
+            <ion-label class="lbl_date">19</ion-label>
+          </ion-col>
+          <ion-col size="5" class="col_trainer right_">
+            <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+            <ion-label class="lbl_AP">Join Appointment</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer" (click)="profile()">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <!-- <div class="div_icon color_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div> -->
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_trainer top_">
+          <ion-col size="5" class="col_trainer">
+            <ion-label class="lbl_trainer_pro color_">Intermediate</ion-label>
+          </ion-col>
+          <ion-col size="2" class="col_trainer">
+            <ion-label class="lbl_day">Monday</ion-label>
+            <ion-label class="lbl_date">19</ion-label>
+          </ion-col>
+          <ion-col size="5" class="col_trainer right_">
+            <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+            <ion-label class="lbl_AP">Join Appointment</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer" (click)="profile()">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <!-- <div class="div_icon color_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div> -->
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_trainer top_">
+          <ion-col size="5" class="col_trainer">
+            <ion-label class="lbl_trainer_pro color_">Intermediate</ion-label>
+          </ion-col>
+          <ion-col size="2" class="col_trainer">
+            <ion-label class="lbl_day">Monday</ion-label>
+            <ion-label class="lbl_date">19</ion-label>
+          </ion-col>
+          <ion-col size="5" class="col_trainer right_">
+            <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+            <ion-label class="lbl_AP">Join Appointment</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer" (click)="profile()">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <!-- <div class="div_icon color_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div> -->
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_trainer top_">
+          <ion-col size="5" class="col_trainer">
+            <ion-label class="lbl_trainer_pro color_">Intermediate</ion-label>
+          </ion-col>
+          <ion-col size="2" class="col_trainer">
+            <ion-label class="lbl_day">Monday</ion-label>
+            <ion-label class="lbl_date">19</ion-label>
+          </ion-col>
+          <ion-col size="5" class="col_trainer right_">
+            <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+            <ion-label class="lbl_AP">Join Appointment</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer" (click)="profile()">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <!-- <div class="div_icon color_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div> -->
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_trainer top_">
+          <ion-col size="5" class="col_trainer">
+            <ion-label class="lbl_trainer_pro color_">Intermediate</ion-label>
+          </ion-col>
+          <ion-col size="2" class="col_trainer">
+            <ion-label class="lbl_day">Monday</ion-label>
+            <ion-label class="lbl_date">19</ion-label>
+          </ion-col>
+          <ion-col size="5" class="col_trainer right_">
+            <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+            <ion-label class="lbl_AP">Join Appointment</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer" (click)="profile()">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <!-- <div class="div_icon color_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div> -->
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_trainer top_">
+          <ion-col size="5" class="col_trainer">
+            <ion-label class="lbl_trainer_pro color_">Intermediate</ion-label>
+          </ion-col>
+          <ion-col size="2" class="col_trainer">
+            <ion-label class="lbl_day">Monday</ion-label>
+            <ion-label class="lbl_date">19</ion-label>
+          </ion-col>
+          <ion-col size="5" class="col_trainer right_">
+            <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+            <ion-label class="lbl_AP">Join Appointment</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer" (click)="profile()">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <!-- <div class="div_icon color_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div> -->
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_trainer top_">
+          <ion-col size="5" class="col_trainer">
+            <ion-label class="lbl_trainer_pro color_">Intermediate</ion-label>
+          </ion-col>
+          <ion-col size="2" class="col_trainer">
+            <ion-label class="lbl_day">Monday</ion-label>
+            <ion-label class="lbl_date">19</ion-label>
+          </ion-col>
+          <ion-col size="5" class="col_trainer right_">
+            <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+            <ion-label class="lbl_AP">Join Appointment</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer" (click)="profile()">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <!-- <div class="div_icon color_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div> -->
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_trainer top_">
+          <ion-col size="5" class="col_trainer">
+            <ion-label class="lbl_trainer_pro color_">Intermediate</ion-label>
+          </ion-col>
+          <ion-col size="2" class="col_trainer">
+            <ion-label class="lbl_day">Monday</ion-label>
+            <ion-label class="lbl_date">19</ion-label>
+          </ion-col>
+          <ion-col size="5" class="col_trainer right_">
+            <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+            <ion-label class="lbl_AP">Join Appointment</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer" (click)="profile()">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <!-- <div class="div_icon color_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div> -->
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_trainer top_">
+          <ion-col size="5" class="col_trainer">
+            <ion-label class="lbl_trainer_pro color_">Intermediate</ion-label>
+          </ion-col>
+          <ion-col size="2" class="col_trainer">
+            <ion-label class="lbl_day">Monday</ion-label>
+            <ion-label class="lbl_date">19</ion-label>
+          </ion-col>
+          <ion-col size="5" class="col_trainer right_">
+            <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+            <ion-label class="lbl_AP">Join Appointment</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer" (click)="profile()">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <!-- <div class="div_icon color_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div> -->
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_trainer top_">
+          <ion-col size="5" class="col_trainer">
+            <ion-label class="lbl_trainer_pro color_">Intermediate</ion-label>
+          </ion-col>
+          <ion-col size="2" class="col_trainer">
+            <ion-label class="lbl_day">Monday</ion-label>
+            <ion-label class="lbl_date">19</ion-label>
+          </ion-col>
+          <ion-col size="5" class="col_trainer right_">
+            <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+            <ion-label class="lbl_AP">Join Appointment</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer" (click)="profile()">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <!-- <div class="div_icon color_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div> -->
+          </ion-col>
+        </ion-row>
+        <ion-row class="row_trainer top_">
+          <ion-col size="5" class="col_trainer">
+            <ion-label class="lbl_trainer_pro color_">Intermediate</ion-label>
+          </ion-col>
+          <ion-col size="2" class="col_trainer">
+            <ion-label class="lbl_day">Monday</ion-label>
+            <ion-label class="lbl_date">19</ion-label>
+          </ion-col>
+          <ion-col size="5" class="col_trainer right_">
+            <ion-label class="lbl_time">08:00 AM - 08:00 AM</ion-label>
+            <ion-label class="lbl_AP">Join Appointment</ion-label>
+          </ion-col>
+        </ion-row>
+      </div>
+
+    </div>
+
+  </div>
+
+</ion-content>

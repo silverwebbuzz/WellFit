@@ -1,0 +1,397 @@
+<ion-content color="dark">
+
+  <ion-segment [(ngModel)]="tabs" mode="md" value="trainers">
+    <ion-segment-button class="btn_top" value="trainers">
+      <ion-label>Trainers</ion-label>
+    </ion-segment-button>
+    <ion-segment-button class="btn_top" value="followings">
+      <ion-label>Following</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="tabs">
+    <div *ngSwitchCase="'trainers'">
+
+      <ion-searchbar searchIcon="none" class="search_"></ion-searchbar>
+
+      <div class="div_scroll">
+        <div class="div_chip">
+          <div class="chip_ color_">
+            <img src="../../../assets/images/yoga7.png" class="img_chip" />
+          </div>
+          <ion-label class="lbl_chip">Naira</ion-label>
+        </div>
+
+        <div class="div_chip">
+          <div class="chip_ color1_">
+            <img src="../../../assets/images/yoga7.png" class="img_chip" />
+          </div>
+          <ion-label class="lbl_chip">Naira</ion-label>
+        </div>
+
+        <div class="div_chip">
+          <div class="chip_ color_">
+            <img src="../../../assets/images/yoga7.png" class="img_chip" />
+          </div>
+          <ion-label class="lbl_chip">Naira</ion-label>
+        </div>
+
+        <div class="div_chip">
+          <div class="chip_ color1_">
+            <img src="../../../assets/images/yoga7.png" class="img_chip" />
+          </div>
+          <ion-label class="lbl_chip">Naira</ion-label>
+        </div>
+
+        <div class="div_chip">
+          <div class="chip_ color_">
+            <img src="../../../assets/images/yoga7.png" class="img_chip" />
+          </div>
+          <ion-label class="lbl_chip">Naira</ion-label>
+        </div>
+
+        <div class="div_chip">
+          <div class="chip_ color1_">
+            <img src="../../../assets/images/yoga7.png" class="img_chip" />
+          </div>
+          <ion-label class="lbl_chip">Naira</ion-label>
+        </div>
+
+        <div class="div_chip">
+          <div class="chip_ color_">
+            <img src="../../../assets/images/yoga7.png" class="img_chip" />
+          </div>
+          <ion-label class="lbl_chip">Naira</ion-label>
+        </div>
+
+        <div class="div_chip">
+          <div class="chip_ color1_">
+            <img src="../../../assets/images/yoga7.png" class="img_chip" />
+          </div>
+          <ion-label class="lbl_chip">Naira</ion-label>
+        </div>
+
+      </div>
+
+      <div class="div_vertical">
+
+        <div class="div_trainer" (click)="profile()">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+              <ion-label class="lbl_trainer_pro color1_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color1_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+              <ion-label class="lbl_trainer_pro color1_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color1_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+              <ion-label class="lbl_trainer_pro color1_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color1_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+              <ion-label class="lbl_trainer_pro color1_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color1_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+              <ion-label class="lbl_trainer_pro color1_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color1_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+        <div class="div_trainer">
+          <ion-row class="row_trainer">
+            <ion-col size="9" class="col_trainer">
+              <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+              <ion-label class="lbl_trainer_pro color_">Personal Trainer</ion-label>
+            </ion-col>
+            <ion-col size="3" class="col_trainer">
+              <div class="div_icon color_">
+                <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+      </div>
+    </div>
+
+    <div *ngSwitchCase="'followings'">
+
+      <ion-searchbar searchIcon="none" class="search_"></ion-searchbar>
+
+      <div class="div_trainer" (click)="profile()">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            <ion-label class="lbl_trainer_pro colors_">Personal Trainer</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <div class="div_icon colors_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            <ion-label class="lbl_trainer_pro colors1_">Personal Trainer</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <div class="div_icon colors1_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            <ion-label class="lbl_trainer_pro colors_">Personal Trainer</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <div class="div_icon colors_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            <ion-label class="lbl_trainer_pro colors1_">Personal Trainer</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <div class="div_icon colors1_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            <ion-label class="lbl_trainer_pro colors_">Personal Trainer</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <div class="div_icon colors_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            <ion-label class="lbl_trainer_pro colors1_">Personal Trainer</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <div class="div_icon colors1_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            <ion-label class="lbl_trainer_pro colors_">Personal Trainer</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <div class="div_icon colors_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            <ion-label class="lbl_trainer_pro colors1_">Personal Trainer</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <div class="div_icon colors1_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            <ion-label class="lbl_trainer_pro colors_">Personal Trainer</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <div class="div_icon colors_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            <ion-label class="lbl_trainer_pro colors1_">Personal Trainer</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <div class="div_icon colors1_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="div_trainer">
+        <ion-row class="row_trainer">
+          <ion-col size="9" class="col_trainer">
+            <ion-label class="lbl_trainer">Ashish Chutake</ion-label>
+            <ion-label class="lbl_trainer_pro colors_">Personal Trainer</ion-label>
+          </ion-col>
+          <ion-col size="3" class="col_trainer">
+            <div class="div_icon colors_">
+              <ion-icon name="barbell-outline" class="icon_div"></ion-icon>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+    </div>
+
+  </div>
+
+</ion-content>

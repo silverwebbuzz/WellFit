@@ -1,0 +1,251 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  src: url("src/assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+.item_ {
+  width: 85%;
+  margin: 0 auto !important;
+  --inner-padding-end: 0px;
+  --padding-start: 0px;
+  // padding: 2px 8px 2px 8px;
+  margin: 0px;
+  border-radius: 50px;
+  margin-top: 16px !important;
+
+  .input_ {
+    margin-left: 32px;
+    text-align: start;
+    --padding-top: 0px;
+    --padding-end: 0px;
+    --padding-bottom: 0px;
+    --padding-start: 0;
+  }
+  .select_ {
+    min-width: 100%;
+    --padding-end: 24px;
+    --padding-start: 24px;
+  }
+}
+
+.validator-error {
+  --background: transparent;
+  color: #d44848;
+  --min-height: 18px;
+  width: 85%;
+  margin: 0 auto;
+
+  .content {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 14px;
+  }
+}
+
+.searchbar-clear-icon.sc-ion-searchbar-ios {
+  margin-right: 16px;
+}
+.div_scroll::-webkit-scrollbar {
+  display: none;
+}
+.div_scroll {
+  padding: 0px 10px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  // display: flex;
+  // flex-wrap: nowrap;
+  // overflow-x: auto;
+  .div_chip {
+    width: 60px;
+    display: inline-block;
+    // flex: 0 0 auto;
+    .chip_ {
+      background: var(--ion-color-warning);
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      text-align: center;
+      line-height: 3.5;
+      margin: 0 auto;
+      .img_chip {
+        height: 24px;
+      }
+    }
+    .lbl_chip {
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      padding: 4px 0px;
+    }
+  }
+}
+
+.div_ {
+  background: var(--ion-color-warning);
+  margin: 16px;
+  border-radius: 16px;
+  .row_ {
+    .col_ {
+      margin: auto;
+      text-align: center;
+      .img_ {
+        height: 100px;
+      }
+      .lbl_free {
+        position: absolute;
+        top: -15px;
+        right: 15px;
+
+        display: block;
+        font-size: 12px;
+        text-align: right;
+        padding: 2px 0px;
+        text-transform: uppercase;
+        font-style: italic;
+        // text-decoration: underline;
+      }
+      .lbl_ {
+        display: block;
+        font-size: 16px;
+        text-align: left;
+        padding: 2px 0px;
+        font-weight: bold;
+      }
+      .lbl1_ {
+        display: block;
+        font-size: 14px;
+        text-align: left;
+        padding: 2px 0px;
+      }
+      .lbl2_ {
+        display: block;
+        font-size: 14px;
+        text-align: left;
+        padding: 2px 0px;
+      }
+    }
+  }
+}
+
+.div_trainer {
+  height: 114px;
+  margin: 16px;
+  border-radius: 16px;
+  background-size: cover !important;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  background: url(../../../ionicProject/WellFit360-Mobile/src/assets/images/girlTrainer1.jpg)
+    0 0/100% 100% no-repeat;
+  .row_trainer {
+    .col_trainer {
+      padding: 0px;
+      .lbl_trainer {
+        display: block;
+        font-size: 16px;
+        padding: 16px;
+      }
+      .lbl_trainer_pro {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px 16px;
+        background: red;
+        width: 75%;
+      }
+      .lbl_day {
+        display: block;
+        font-size: 10px;
+        text-align: center;
+        padding: 1px 0px;
+      }
+      .lbl_date {
+        display: block;
+        font-weight: bold;
+        font-size: 22px;
+        text-align: center;
+      }
+      .lbl_time {
+        display: block;
+        font-size: 10px;
+        padding: 4px 0px;
+        // text-align: right;
+        // padding-right: 14px;
+      }
+      .lbl_AP {
+        display: block;
+        font-size: 14px;
+      }
+      .div_icon {
+        background: red;
+        width: fit-content;
+        padding: 4px 16px;
+        margin: 16px 10px;
+        border-radius: 8px;
+        .icon_div {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+.live-code {
+  --height: 259px;
+  --border-radius: 24px;
+  --width: 80%;
+  margin: 0 auto;
+  --background: var(--ion-color-dark);
+}
+.logout {
+  --background: var(--ion-color-dark);
+  h2 {
+    color: var(--ion-color-light) !important;
+    margin-top: 24px !important;
+  }
+  div {
+    color: var(--ion-color-light) !important;
+    // margin-bottom: 24px !important;
+  }
+  .btnO_ {
+    background: var(--ion-color-primary);
+    color: var(--ion-color-light);
+    font-weight: normal !important;
+    margin-top: 9px !important;
+    font-size: 14px;
+  }
+  .btnC_ {
+    background: var(--ion-color-light);
+    color: var(--ion-color-dark);
+    font-weight: normal !important;
+    margin-top: 9px !important;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,32 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom" class="tab_bar">
+    <ion-tab-button tab="explore" class="tab_btn">
+      <ion-icon name="grid-outline" class="tab_icons"></ion-icon>
+      <ion-label class="tab_lbl">Explore</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="bookings">
+      <ion-icon name="bookmark-outline" class="tab_icons"></ion-icon>
+      <ion-label class="tab_lbl">Bookings</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button disabled> </ion-tab-button>
+
+    <ion-tab-button tab="chat-history">
+      <ion-icon name="chatbubbles-outline" class="tab_icons"></ion-icon>
+      <ion-label class="tab_lbl">Chat</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="open()">
+      <ion-icon name="ellipsis-horizontal-outline" class="tab_icons"></ion-icon>
+      <ion-label class="tab_lbl">More</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+  <app-kids-quiz-list></app-kids-quiz-list>
+</ion-tabs>
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed" class="fab_" (click)="trainer()">
+  <ion-fab-button>
+    <ion-icon name="barbell-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

@@ -1,0 +1,73 @@
+<ion-content color="dark">
+
+  <div class="div_head">
+    <ion-label color="light" class="lbl_login">Physique Stats</ion-label>
+    <ion-label color="light" class="lbl_desc">Enter your personal stats</ion-label>
+  </div>
+
+  <form [formGroup]="stats_form" autocomplete="off">
+
+  <ion-item lines="none" class="item_">
+    <ion-select interface="action-sheet" formControlName="age" placeholder="Age" class="select_" mode="md">
+      <ion-select-option>Age</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item no-padding lines="none" class="validator-error"
+    *ngIf="stats_form.controls.age.hasError('required') && stats_form.controls.age.touched">
+    <p class="content">Please Select Option!</p>
+  </ion-item>
+
+  <div (click)="height()">
+  <ion-item lines="none" class="item_">
+    <ion-select interface="action-sheet" formControlName="height" placeholder="Height" disabled class="select_" mode="md">
+      <ion-select-option>Height</ion-select-option>
+    </ion-select>
+  </ion-item>
+  </div>
+
+  <ion-item no-padding lines="none" class="validator-error"
+    *ngIf="stats_form.controls.height.hasError('required') && stats_form.controls.height.touched">
+    <p class="content">Please Select Option!</p>
+  </ion-item>
+
+  <ion-item lines="none" class="item_">
+    <ion-select interface="action-sheet" formControlName="weight" placeholder="Weight" class="select_" mode="md">
+      <ion-select-option>Weight</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item no-padding lines="none" class="validator-error"
+    *ngIf="stats_form.controls.weight.hasError('required') && stats_form.controls.weight.touched">
+    <p class="content">Please Select Option!</p>
+  </ion-item>
+
+  <ion-item lines="none" class="item_">
+    <ion-select interface="action-sheet" formControlName="level" placeholder="Level" class="select_" mode="md">
+      <ion-select-option>Level</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item no-padding lines="none" class="validator-error"
+    *ngIf="stats_form.controls.level.hasError('required') && stats_form.controls.level.touched">
+    <p class="content">Please Select Option!</p>
+  </ion-item>
+
+  <ion-item lines="none" class="item_">
+    <ion-select interface="action-sheet" formControlName="gender" placeholder="Gender" class="select_" mode="md">
+      <ion-select-option>Gender</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item no-padding lines="none" class="validator-error"
+    *ngIf="stats_form.controls.gender.hasError('required') && stats_form.controls.gender.touched">
+    <p class="content">Please Select Option!</p>
+  </ion-item>
+
+  </form>
+
+  <div class="div_btn">
+    <ion-button expand="full" shape="round" (click)="confirm()">Confirm</ion-button>
+  </div>
+
+</ion-content>

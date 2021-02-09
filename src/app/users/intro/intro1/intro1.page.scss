@@ -1,0 +1,54 @@
+ion-content {
+  // --padding-start: 16px;
+  // --padding-end: 16px;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+  .lbl_skip {
+    display: block;
+    text-align: end;
+    margin: 28px 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .div_lbl {
+    margin: 64px 0px 0px 0px;
+    .lbl_head {
+      display: block;
+      text-align: center;
+      margin: 0px 0px 16px 0px;
+      text-transform: none;
+      font-weight: bold;
+      font-size: 22px;
+    }
+    .lbl_desc {
+      display: block;
+      text-align: center;
+      margin: 0px;
+      text-transform: none;
+      font-weight: normal;
+      font-size: 16px;
+    }
+  }
+  .div_img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+    text-align: center;
+    .img_logo {
+      height: 125px;
+    }
+  }
+  .div_btn{
+    width: 100%;
+    position: absolute;
+    bottom: 24px;
+    .btn_footer {
+      margin: 0px;
+      margin: 0 auto;
+      width: 75%;
+      text-transform: uppercase;
+    }
+  }
+}

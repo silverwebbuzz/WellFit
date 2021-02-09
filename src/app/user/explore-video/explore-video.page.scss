@@ -1,0 +1,85 @@
+ion-content {
+  .div_video {
+    height: 188px;
+    background: url(../../../assets/images/gym1.jpeg) 0 0/100% 100% no-repeat;
+    // .back_ {
+    //   .back_icon {
+    //   }
+    // }
+    .div_abs {
+      .div_logo {
+        text-align: center;
+        padding: 0px 0px 16px 0px;
+        .img_logo {
+          width: 48%;
+        }
+      }
+      .btn_ {
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 60%;
+        font-size: 14px;
+        margin: 0 auto;
+        .icon_ {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .div_bottom {
+    padding: 20px 32px;
+    .lbl_head {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    .lbl_head1 {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-style: italic;
+    }
+    .div_row {
+      margin: 22px 0px;
+      .row_main {
+        padding: 2px 0px;
+        .col_main {
+          padding: 0px;
+          margin: auto;
+          line-height: 0;
+          color: var(--ion-color-medium);
+          .icon_lbl {
+            font-size: 24px;
+            margin-right: 8px;
+          }
+          .icons_ {
+            font-size: 20px !important;
+            margin-left: 3px;
+          }
+          .lbl_set {
+            display: block;
+            font-size: 14px;
+            padding-left: 8px;
+          }
+        }
+      }
+    }
+    .div_hd {
+        margin-bottom: 16px;
+      .lbl_heads {
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .lbl_desc {
+        display: block;
+        font-size: 14px;
+        padding: 8px 0px;
+        line-height: 1.5;
+        color: var(--ion-color-medium);
+      }
+    }
+  }
+}
